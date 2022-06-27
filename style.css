@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url(/images/bg-intro-desktop.png);
+    background-image: url(images/bg-intro-desktop.png);
     background-color: rgb(255, 122, 122);
     margin-top: 7%;
 }
