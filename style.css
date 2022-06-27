@@ -26,11 +26,11 @@ main{
     width: 50%;
 }
 
-.left_container h3{
-    font-size: 2.5rem;
-    line-height: 3rem;
-    font-weight: 700;
-    padding-bottom: 30px;
+.left_container h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 24px;
+    color: white;
 }
 
 .left_container p{
@@ -65,42 +65,6 @@ input:focus{
     outline-color: hsl(248, 32%, 49%);
 }
 
-.form-control.success input {
-	border-color: #2ecc71;
-}
-
-.form-control.error input {
-	border-color: #e74c3c;
-}
-
-.form-control i {
-	visibility: hidden;
-	position: absolute;
-	top: 40px;
-	right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-	color: #2ecc71;
-	visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
-}
-
-.form-control small {
-	color: #e74c3c;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	visibility: hidden;
-}
-
-.form-control.error small {
-	visibility: visible;
-}
 
 
 input, button{
@@ -130,6 +94,71 @@ span a{
     text-decoration: none;
 }
 
+
+
+.form-control{    
+    width: 90%;
+    margin-bottom: 1rem !important;
+    position: relative;
+}
+
+
+
+.form-control.error {
+    margin-bottom: 2.3rem !important;
+    text-align: end;
+}
+
+.form-control input:focus{
+    border-width: 1px !important;
+}
+
+.form-control.success input {
+    border-color: black;
+}
+
+.form-control.error input {
+    border-color: rgb(255, 122, 122);
+    border-width: 2px;
+    padding: 0.8rem 1.2rem !important;
+}
+
+.form-control.error > .aside::placeholder{
+    font-size: 16px !important;
+    color: rgb(255, 122, 122);
+}
+
+.form-control.error input::placeholder {
+    font-size: 0px;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 1.3rem;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: rgb(255, 122, 122);
+    visibility: visible !important;
+}
+
+.form-control small {
+    color: rgb(255, 122, 122);
+    position: absolute;
+    bottom: -23px;
+    right: 0;
+    font-size: 13px;
+    font-style: italic;
+    visibility: hidden !important;
+}
+
+.form-control.error small {
+    visibility: visible !important;
+}
+
 @media only screen and (max-width: 840px){
     main{
         display: flex;
@@ -144,11 +173,11 @@ span a{
         padding-bottom: 30px;
     }
 
-    .left_container h3{
+    .left_container h1{
         text-align: center;
         font-size: 30px;
         line-height: 2.5rem;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
     }
 
     .left_container p{
