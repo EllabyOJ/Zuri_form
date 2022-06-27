@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url(images/bg-intro-desktop.png);
+    background-image: url(./images/bg-intro-desktop.png);
     background-color: rgb(255, 122, 122);
     margin-top: 7%;
 }
@@ -79,6 +79,7 @@ input, button{
 button{
     background-color: hsl(154, 59%, 51%);
     font-weight: 500;
+
 }
 
 .forms p{
@@ -97,7 +98,7 @@ span a{
 
 
 .form-control{    
-    width: 90%;
+    width: 100%;
     margin-bottom: 1rem !important;
     position: relative;
 }
@@ -105,8 +106,7 @@ span a{
 
 
 .form-control.error {
-    margin-bottom: 2.3rem !important;
-    text-align: end;
+    margin: 0 auto 2.3rem !important;
 }
 
 .form-control input:focus{
@@ -119,7 +119,7 @@ span a{
 
 .form-control.error input {
     border-color: rgb(255, 122, 122);
-    border-width: 2px;
+    border-width: 1px;
     padding: 0.8rem 1.2rem !important;
 }
 
@@ -143,11 +143,14 @@ span a{
 .form-control.error i.fa-exclamation-circle {
     color: rgb(255, 122, 122);
     visibility: visible !important;
+    margin-right: 30px;
+
 }
 
 .form-control small {
     color: rgb(255, 122, 122);
     position: absolute;
+    margin-right: 30px;
     bottom: -23px;
     right: 0;
     font-size: 13px;
